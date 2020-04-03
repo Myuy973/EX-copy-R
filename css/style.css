@@ -823,27 +823,36 @@ header #main-top-page div p {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 99px;
 }
 
 #main-master #service-info #service-info-main > div:first-child {
   border-right: 1px solid #E5E5E5;
 }
 
-#main-master #service-info #service-info-main > div:last-child > div {
-  left: 52.1%;
+#main-master #service-info #service-info-main > div:first-child h1, #main-master #service-info #service-info-main > div:first-child small {
+  padding-right: 7px;
 }
 
-#main-master #service-info #service-info-main > div > div {
-  position: absolute;
-  top: 52.5%;
-  left: 49.1%;
-  height: 200px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+#main-master #service-info #service-info-main > div:first-child div {
+  width: 42%;
+  -webkit-transform: translateX(-2%);
+          transform: translateX(-2%);
 }
 
-#main-master #service-info #service-info-main > div > div h1 {
+#main-master #service-info #service-info-main > div:last-child h1, #main-master #service-info #service-info-main > div:last-child small {
+  padding-left: 35px;
+}
+
+#main-master #service-info #service-info-main > div:last-child div {
+  width: 42%;
+  -webkit-transform: translateX(6%);
+          transform: translateX(6%);
+}
+
+#main-master #service-info #service-info-main > div h1 {
   color: #47B39D;
   font-size: 36px;
   font-weight: normal;
@@ -852,28 +861,28 @@ header #main-top-page div p {
   margin: 0 0 7px 0;
 }
 
-#main-master #service-info #service-info-main > div > div small {
+#main-master #service-info #service-info-main > div small {
   color: #47B39D;
   font-size: 11px;
   letter-spacing: 1px;
 }
 
-#main-master #service-info #service-info-main > div > div div {
-  width: 261px;
-  height: 58px;
-  line-height: 58px;
+#main-master #service-info #service-info-main > div div {
   background: #47B39D;
   border-radius: 5px;
   margin: 30px auto 0 auto;
   -webkit-transition: .5s;
   transition: .5s;
+  padding: 2.4% 4%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#main-master #service-info #service-info-main > div > div div:hover {
+#main-master #service-info #service-info-main > div div:hover {
   background: #75d4c1;
 }
 
-#main-master #service-info #service-info-main > div > div div a {
+#main-master #service-info #service-info-main > div div a {
   color: white;
   display: inline-block;
   width: 100%;
@@ -885,57 +894,45 @@ header #main-top-page div p {
     display: block;
     height: auto;
   }
-  #main-master #service-info #service-info-main > div:first-child {
+  #main-master #service-info #service-info-main > div:first-child, #main-master #service-info #service-info-main > div:last-child {
     height: 330px;
+  }
+  #main-master #service-info #service-info-main > div:first-child > div, #main-master #service-info #service-info-main > div:last-child > div {
+    width: 48%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    padding: 1.6% 4%;
+    margin: 28px auto 0 auto;
   }
   #main-master #service-info #service-info-main > div:last-child {
-    height: 330px;
+    padding-top: 71px;
   }
-  #main-master #service-info #service-info-main > div:last-child > div {
-    left: 49.1%;
-    top: 51%;
+  #main-master #service-info #service-info-main > div:last-child h1, #main-master #service-info #service-info-main > div:last-child small {
+    padding-right: 33px;
+  }
+  #main-master #service-info #service-info-main > div h1, #main-master #service-info #service-info-main > div small {
+    padding-left: 6px;
   }
   #main-master #service-info #service-info-main > div > div {
-    top: 60.5%;
-  }
-  #main-master #service-info #service-info-main > div > div h1, #main-master #service-info #service-info-main > div > div small {
-    padding-left: 20px;
-  }
-  #main-master #service-info #service-info-main > div > div > div {
-    width: 463px;
-    margin: 28px 0 0 16px;
+    width: 48%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    padding: 1.6% 4%;
+    margin: 28px auto 0 auto;
   }
 }
 
 @media (max-width: 767px) {
   #main-master #service-info #service-info-main > div:first-of-type {
-    height: 510px;
+    height: 496px;
+    padding-top: 174px;
   }
-  #main-master #service-info #service-info-main > div:last-of-type > div {
-    top: 48%;
+  #main-master #service-info #service-info-main > div:last-of-type {
+    height: 344px;
   }
-  #main-master #service-info #service-info-main > div:last-of-type > div div {
-    width: 111%;
-    margin: 43px 0 0 -11px;
-  }
-  #main-master #service-info #service-info-main > div > div {
-    top: 54%;
-    letter-spacing: 0;
-  }
-  #main-master #service-info #service-info-main > div > div h1, #main-master #service-info #service-info-main > div > div small {
-    padding-left: 16px;
-  }
-  #main-master #service-info #service-info-main > div > div h1 {
-    letter-spacing: 2.8px;
-    margin-bottom: 6px;
-  }
-  #main-master #service-info #service-info-main > div > div small {
-    font-size: 11px;
-    letter-spacing: 1px;
-  }
-  #main-master #service-info #service-info-main > div > div > div {
-    width: 101%;
-    margin: 46px 0 0 5px;
+  #main-master #service-info #service-info-main > div:first-of-type > div, #main-master #service-info #service-info-main > div:last-of-type > div {
+    margin-top: 46px;
+    padding: 2% 4.2%;
   }
 }
 
